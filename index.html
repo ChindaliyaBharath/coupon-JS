@@ -20,8 +20,9 @@
 </script> -->
 
 <!-- Javascript Event Used for toggle -->
+
 <body>
-<!-- <body class="mydark">
+    <!-- <body class="mydark">
     <p>Click on home button for login
         <i class="glyphicon glyphicon-home" onclick="changeMode()">Click For Login Page</i>
         <i class="glyphicon glyphicon-home" onclick="changeMode()">Click For Login Page</i>
@@ -39,36 +40,55 @@
             <h3>Welcome to HDFC Bank NetBanking</h3>
             <img src="https://netbanking.hdfcbank.com/netbanking/gif/logo.png" class="width100" alt="" />
         </center>
+        <!-- <div>
+            <button onclick="getLocation()">Geolocation</button>
+            <p id="out"></p>
+            <p id="loaction"></p>
+            <p id="weather"></p>
+
+        </div> -->
+        
+       <div>
+
+        <h3>Click the button to get your location</h3>
+        <button onclick="getLocation()"><i class="glyphicon glyphicon-send" ></i></button>
+
+       </div>
+        
+                
         
     </div>
 
     <!-- For Body Section -->
-    
-   
+
+
     <div class="jumbotron container">
-        
-        
+
+
         <h2>Login to NetBanking</h2>
         <div class="form-group row">
             <div class="col-xs-4">
                 <label for="email">Customer ID/ User ID:</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter your Customer ID/ User ID "
                     name="CUST ID">
-                    <div id="coupon">
-                        <button onclick="closeCoupon()  "  style="float: right;">&times;</button>
-                        <h2>Let's open Account with HDFC Bank </h2>
-                        <span>With minimum documentaion and you can complete it by 3 steps</span>
-                        <li>
-                           <b>
+                <div id="coupon">
+                    <button onclick="closeCoupon()  " style="float: right;">&times;</button>
+                    <h2>Let's open Account with HDFC Bank </h2>
+                    <span>With minimum documentaion and you can complete it by 3 steps</span>
+                    <li>
+                        <b>
                             <ol>Step=1.Register with Mobile No</ol>
                             <ol>Step=2.Upload your KYC DOcuments</ol>
                             <ol>Step=3.Complete your Video KYC</ol>
                         </b>
-                        </li>
-                        <span>Your Account is Ready with HDFC Bank</span>
-                        
-                        <img src="https://www.hdfcbank.com/content/api/contentstream-id/723fb80a-2dde-42a3-9793-7ae1be57c87f/6f104840-9b17-4c10-aba5-f85ec59f3534/Common/DAP/Adobe%20Forms/2022/May-2022/960x150-InstaSA-Acq-27May.jpg" alt="Account">
-                </div>    
+                    </li>
+                    <span>Your Account is Ready with HDFC Bank</span>
+
+                    <img src="https://www.hdfcbank.com/content/api/contentstream-id/723fb80a-2dde-42a3-9793-7ae1be57c87f/6f104840-9b17-4c10-aba5-f85ec59f3534/Common/DAP/Adobe%20Forms/2022/May-2022/960x150-InstaSA-Acq-27May.jpg"
+                        alt="Account">
+                    <h2 style="color: blue;"> We are happy that you are part of India's NO.1 Bank </h2>
+
+                </div>
 
                 <!-- <button type="submit" class="btn btn-primary" href="/New folder/login.html">Continue</button> -->
                 <!-- <a href="./New folder/login.html" class="text-white">Continue> </a> -->
@@ -77,7 +97,7 @@
                     <input type="submit" class="btn btn-primary" value="continue">
 
                 </a>
-                 
+
                 <!-- </button> -->
                 <div style="background-color:#e2effa;padding:10px 15px;">Dear Customer,<br /> Welcome to the new login
                     page of HDFC Bank NetBanking. <br /> Its lighter look and feel is designed to give you the best
@@ -92,7 +112,7 @@
                             Retail Loan only? Login here</span>
                     </div>
                 </div>
-                
+
 
             </div>
             <div class="jumbotron text-center">
@@ -145,7 +165,7 @@
 
     </footer>
     <script>
-        window.onload=loanCoupon()
+        window.onload = loanCoupon()
     </script>
 
 </body>
